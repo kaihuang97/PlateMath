@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PlateMath</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/platemath.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/5beaca88f1.js"></script>
+    <script src="navmenu.js"></script>
+</head>
+
+<body>
+    <div id="nav" class="navmenu">
+        <a href="#" class="btnClose" onclick="closeMenu()"><i class="fa fa-times"></i></a>
+        <a href="index.html">Kai</a>
+        <p><a class="colmenu" data-toggle="collapse" href="#projects" aria-expanded="false" aria-controls="projects">Projects</a>
+        </p>
+        <div class="collapse" id="projects">
+            <a href="platemath.html">PlateMath</a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">
+            <div class="btnOpen">
+                <a href="#" onclick="openMenu()"><i class="fa fa-bars"></i></a>
+            </div>
+            <h1>PlateMath</h1>
+            <div class="ask">
+                <p>What's the weight?</p>
+                <p><input name="lb" id="weight" type="text" size="3">
+                    <span>pounds</span></p>
+            </div>
+            <div class="output">
+                <p id="need"></p>
+                <p>
+                    <span id="p45"></span><br>
+                    <span id="p25"></span><br>
+                    <span id="p10"></span><br>
+                    <span id="p5"></span><br>
+                    <span id="p2">
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>* Weight is rounded to nearest 5 lbs.</p>
+        </div>
+    </div>
+    
+    <script src='https://rawgit.com/SamWM/jQuery-Plugins/master/numeric/jquery.numeric.js'></script>
+    <script src="platemath.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</script>
+</body>
+
+</html>
